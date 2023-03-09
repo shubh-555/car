@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>car_price_prediction</h1>
+
+    <form action="/get_data" method="post">
+        <label>year:</label> <input type="number" name="html_year"> <br> <br>
+        <label>Present_Price:</label> <input type="number" step= '0.001' name="html_Present_Price"> <br> <br>
+        <label>Kms_Driven:</label> <input type="number" name="html_Kms_Driven"> <br> <br>
+
+        <label>fuel_type</label>
+        <select name="html_fuel_type">
+            <option value="CNG">CNG</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Petrol">Petrol</option>
+        </select> <br> <br>
+
+        <label>Seller_Type</label>
+        <input type="radio" name="html_seller_type" value="Dealer"> <label>Dealer</label>
+        <input type="radio" name="html_seller_type" value="Individual"> <label>Individual</label> <br> <br>
+
+        <label>Transmission</label>
+        <input type="radio" name="html_trasmission" value="Manual"> <label>Manual</label>
+        <input type="radio" name="html_trasmission" value="Automatic"> <label>Automatic</label> <br> <br>
+
+        <label>owner:</label> <input type="number" name="html_owner"> <br> <br>
+
+        <input type="submit"value=prediction>
+    </form> <br> <br>
+    <label>car_price_prediction : </label>{{prediction}}
+
+
+
+
+
+</body>
+</html>
