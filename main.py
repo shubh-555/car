@@ -10,7 +10,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/get_data',methods=['POST'])
+@app.route('/get_data',methods=['POST','GET'])
 def get_data():
     data=request.form
     class_object=car_price(data)
