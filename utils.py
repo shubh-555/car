@@ -10,10 +10,10 @@ class car_price ():
 
 
     def loading_files(self):
-        with open(r'artifacts\car_info.json','r') as file:
+        with open(r'artifacts/car_info.json','r') as file:
             self.car_info=json.load(file)
 
-        with open(r'artifacts\car_prise_pred.pkl','rb') as file:
+        with open(r'artifacts/car_prise_pred.pkl','rb') as file:
             self.car_model=pickle.load(file)   
 
 
