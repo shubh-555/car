@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CAR PRICE PREDICTION</title>
+    <style>
+        body { 
+        background-image: url("https://www.bugatti.com/fileadmin/_processed_/sei/p54/se-image-b29849851337476d59de3d0d5b61a1c8.jpg");
+        background-repeat:no-repeat; 
+        background-size:cover; 
+        }
+    </style>
 </head>
-<body style="background-color: rgb(245, 245, 9);">
+<body>
     <h1>car_price_prediction</h1>
 
     <form action="/get_data" method="post">
         <label>year:</label> <input type="number" name="html_year"> <br> <br>
-        <label>Present_Price:</label> <input type="number" step= '0.001' name="html_Present_Price"> <label>Enter single digit,e.g = for 900000 write 9</label><br> <br>
+        <label>Present_Price:</label> <input type="number" step= '0.001' name="html_Present_Price"> <label>  e.g = for 9 lakhs write 9</label><br> <br>
         <label>Kms_Driven:</label> <input type="number" name="html_Kms_Driven"> <br> <br>
 
         <label>fuel_type</label>
@@ -29,7 +36,7 @@
         <input type="radio" name="html_trasmission" value="Manual"> <label>Manual</label>
         <input type="radio" name="html_trasmission" value="Automatic"> <label>Automatic</label> <br> <br>
 
-        <label>owner:</label> <input type="number" name="html_owner"> <br> <br>
+        <label>owner:</label> <input type="number" name="html_owner"> <label>1st owner = 0</label><br> <br>
 
         <input type="submit"value=prediction>
     </form> <br> <br>
